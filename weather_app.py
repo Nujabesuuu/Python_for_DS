@@ -5,9 +5,9 @@ from flask import Flask, jsonify, request
 import os
 from google import genai
 
-API_TOKEN = 'Zhenya_krut'
-WEATHER_API_KEY = '7F4BCC9W83ELLNNGARVZMURQ8'
-GEMINI_API_KEY = 'AIzaSyCjw5sToesOm8vBtGdXG6wMWDfNsWx90xY'
+API_TOKEN = os.environ.get("API_TOKEN")
+WEATHER_API_KEY = os.environ.get("WEATHER_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 app = Flask(__name__)
