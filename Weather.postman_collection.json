@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "7b8c2b1c-991b-4806-89d2-537babed24f4",
+    "name": "Weather",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45154372",
+    "_collection_link": "https://go.postman.co/collection/45154372-7b8c2b1c-991b-4806-89d2-537babed24f4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Kyiv",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"token\": {{Token}},\n  \"requester_name\": \"Eugene OPrus\",\n  \"location\": \"Kyiv,Ukraine\",\n  \"date\": \"2026-02-01\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://13.60.200.35:8000/content/api/v1/weather",
+          "protocol": "http",
+          "host": [
+            "13",
+            "60",
+            "200",
+            "35"
+          ],
+          "port": "8000",
+          "path": [
+            "content",
+            "api",
+            "v1",
+            "weather"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "london",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"token\": {{Token}},\n  \"requester_name\": \"Eugene OPrus\",\n  \"location\": \"London,UK\",\n  \"date\": \"2006-08-13\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://13.60.200.35:8000/content/api/v1/weather",
+          "protocol": "http",
+          "host": [
+            "13",
+            "60",
+            "200",
+            "35"
+          ],
+          "port": "8000",
+          "path": [
+            "content",
+            "api",
+            "v1",
+            "weather"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Lviv",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"token\": \"Zhenya_krut\",\n  \"requester_name\": \"Eugene OPrus\",\n  \"location\": \"lviv,Ukraine\",\n  \"date\": \"2005-07-01\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://13.60.200.35:8000/content/api/v1/weather",
+          "protocol": "http",
+          "host": [
+            "13",
+            "60",
+            "200",
+            "35"
+          ],
+          "port": "8000",
+          "path": [
+            "content",
+            "api",
+            "v1",
+            "weather"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
